@@ -15,7 +15,7 @@ div.crop img {
 </head>
 <body>
 <div class="crop">
-    <img src="http://120.24.55.64/mallimage3/00001397_20200623133543049.png" class="crop" alt="Paper Sculpture Large">
+    <img src="https://z3.ax1x.com/2021/05/28/2ifoc9.png" class="crop" alt="Paper Sculpture Large">
 </div>
 </body>
 
