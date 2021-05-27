@@ -4,8 +4,8 @@
 <title>untitled</title>
 <style type="text/css" media="screen">
 div.crop {
-    height: 300px;
-    width: 350px;
+    height: 2004px;
+    width: 756px;
     overflow: hidden;
 }
 div.crop img {
