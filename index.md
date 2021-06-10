@@ -20,7 +20,9 @@
 </div>
 <!--<div id="images"></div>-->
 <canvas id="myCanvas"></canvas>
+<img id="ctoi" >
 </body>
+
 <script>
     var storelog = JSON.parse(localStorage.CocStore || '{ "name":{}, "time":{}, "num":{} }');
     var nowTime = new Date();
@@ -59,39 +61,10 @@
         var tnCanvasContext = tnCanvas.getContext('2d');
         var img=document.getElementById("crop");
         console.log("onPreloadComplete");
+        //img.crossOrigin="anonymous";
         tnCanvasContext.drawImage(img,90,130,50,60,10,10,50,60);
+       // document.getElementById("ctoi").src = tnCanvas.toDataURL("image/png");
 
     }
 
-
-    //图像截取
-    function getImagePortion(imgObj, newWidth, newHeight, startX, startY, ratio){
-        /* the parameters: - the image element - the new width - the new height - the x point we start taking pixels - the y point we start taking pixels - the ratio */
-        //set up canvas for thumbnail
-        var tnCanvas=document.getElementById("myCanvas");
-        /*var ctx=c.getContext("2d");
-         var img=document.getElementById("scream");
-
-         img.onload = function() {
-         ctx.drawImage(img,10,10);
-         }*/
-
-        //var tnCanvas = document.createElement('canvas');
-        var tnCanvasContext = tnCanvas.getContext('2d');
-        tnCanvas.width = newWidth; tnCanvas.height = newHeight;
-
-
-
-        /* use the sourceCanvas to duplicate the entire image. This step was crucial for iOS4 and under devices. Follow the link at the end of this post to see what happens when you don’t do this */
-        var bufferCanvas = document.createElement('canvas');
-        var bufferContext = bufferCanvas.getContext('2d');
-        bufferCanvas.width = imgObj.width;
-        bufferCanvas.height = imgObj.height;
-        bufferContext.drawImage(imgObj, 0, 0);
-
-        /* now we use the drawImage method to take the pixels from our bufferCanvas and draw them into our thumbnail canvas */
-        tnCanvasContext.drawImage(bufferCanvas, startX,startY,newWidth * ratio, newHeight * ratio,0,0,newWidth,newHeight);
-        //return tnCanvas.toDataURL();
-
-    }
 </script>
