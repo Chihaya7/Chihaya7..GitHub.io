@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>untitled</title>
@@ -68,13 +65,8 @@
 </head>
 
 <body>
-<div class="crop">
+<!--<div class="crop">
     <img src="https://z3.ax1x.com/2021/05/28/2ifoc9.png" class="crop" alt="Paper Sculpture Large">
-</div>
+</div>-->
 <div id="images"></div>
 </body>
-
-</html>
-
-
-
