@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>untitled</title>
     <style type="text/css" media="screen">
@@ -89,8 +86,6 @@
 <!--<div id="images"></div>-->
 <canvas id="myCanvas"></canvas>
 </body>
-
-</html>
 
 
 
