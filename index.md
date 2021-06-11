@@ -1,3 +1,4 @@
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>untitled</title>
@@ -15,18 +16,18 @@
 </head>
 
 <body>
-<div class="crop">
-    <img src="https://z3.ax1x.com/2021/05/28/2ifoc9.png" class="crop" alt="Paper Sculpture Large" id="crop">
+<canvas id="myCanvas" width="350" height="98" style="border:1px solid #d3d3d3;background:#ffffff;"></canvas>
+<div class="crop" style="display:none">
+    <img src="https://z3.ax1x.com/2021/06/11/2WP7B6.png" class="crop" alt="Paper Sculpture Large" id="crop" >
 </div>
 <!--<div id="images"></div>-->
-<canvas id="myCanvas"></canvas>
+
 <img id="ctoi" >
 </body>
 
 <script>
     var storelog = JSON.parse(localStorage.CocStore || '{ "name":{}, "time":{}, "num":{} }');
     var nowTime = new Date();
-    var offset = nowTime.getTimezoneOffset()/60;
     var cur=Math.round(nowTime.getTime()/1000);
 
     //载入图像
@@ -62,7 +63,17 @@
         var img=document.getElementById("crop");
         console.log("onPreloadComplete");
         //img.crossOrigin="anonymous";
-        tnCanvasContext.drawImage(img,90,130,50,60,10,10,50,60);
+        tnCanvasContext.drawImage(img,420,1800,770,2000,0,0,770,2000);
+/*        context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+        img	规定要使用的图像、画布或视频。
+        sx	可选。开始剪切的 x 坐标位置。
+        sy	可选。开始剪切的 y 坐标位置。
+        swidth	可选。被剪切图像的宽度。
+        sheight	可选。被剪切图像的高度。
+        x	在画布上放置图像的 x 坐标位置。
+        y	在画布上放置图像的 y 坐标位置。
+        width	可选。要使用的图像的宽度。（伸展或缩小图像）
+        height	可选。要使用的图像的高度。（伸展或缩小图像）*/
        // document.getElementById("ctoi").src = tnCanvas.toDataURL("image/png");
 
     }
