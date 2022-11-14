@@ -1,1 +1,1 @@
-# Chihaya7..GitHub.io
+# Chihaya7.GitHub.io 
